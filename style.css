@@ -1,21 +1,39 @@
 /* Global elements being styled */
+body {
+}
 h1 {
-  font-family: Inconsolata, serif;
+  font-family: Merriweather, serif;
   font-weight: 400;
   font-size: 45px;
+  color: #f2f2f2;
 }
 
 li {
   font-family: Inconsolata, serif;
-  font-weight: 400;
-}
-.container {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  height: 100vh;
+  font-weight: 700;
+  color: #f2f2f2;
 }
 
 /* Sections being styled */
+
+.nav-bar {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat (33%, 33%, 33%);
+  width: 100vw;
+  height: 10vh;
+  background-color: #f2f2f2;
+  position: sticky;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr 1fr;
+  height: 90vh;
+  background-color: #181818;
+  padding: 0;
+}
 
 .hero-section {
   grid-row: 2;
@@ -26,6 +44,8 @@ li {
 }
 
 .section-b {
+  grid-row: 2;
+  grid-column: 3;
 }
 
 /* Individual elements being styled */
@@ -34,8 +54,9 @@ li {
   width: 100px;
 }
 
-.hero-section li {
+.nav-bar li {
   display: inline;
   font-size: 30px;
   margin-right: 50px;
+  color: #181818;
 }
