@@ -1,0 +1,41 @@
+/* Global elements being styled */
+h1 {
+  font-family: Inconsolata, serif;
+  font-weight: 400;
+  font-size: 45px;
+}
+
+li {
+  font-family: Inconsolata, serif;
+  font-weight: 400;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+}
+
+/* Sections being styled */
+
+.hero-section {
+  grid-row: 2;
+  padding: 50px;
+}
+
+.section-a {
+}
+
+.section-b {
+}
+
+/* Individual elements being styled */
+
+.hero-section .profile-picture {
+  width: 100px;
+}
+
+.hero-section li {
+  display: inline;
+  font-size: 30px;
+  margin-right: 50px;
+}
